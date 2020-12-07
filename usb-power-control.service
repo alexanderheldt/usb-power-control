@@ -1,0 +1,10 @@
+[Unit]
+Description=Set all USB devices power/control to on
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/usb-power-control.sh
+
+[Install]
+WantedBy=multi-user.target
+
